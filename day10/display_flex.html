@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        /* 자식 속성을 정렬해주는 방식 */
+        .container {
+
+            width: 800px;
+            height: 800px;
+            border: 1px solid #222;
+
+            justify-content: center;
+            align-items: flex-start;
+
+            gap: 24px;
+
+            display: flex;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: antiquewhite;
+            border: 1px solid #222;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+    </div>
+</body>
+</html>
