@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: antiquewhite;
+            border: 1px solid #222;
+
+            line-height: 200px;
+            /* 흔히 행간을 설정하는 속성으로 알고있지만
+             사실 줄 높이를 설정하는 속성이다.
+             부모컨텐츠의 높이와 같은 값을 주면 수직방향으로 가운데정렬된다.*/
+
+            text-align: center;
+
+            /* vertical-align: middle; */
+            /* 테이블에서만 쓸 수 있는 속성이라 활용 불가능 */
+        }
+
+        .box-block {
+            display: block;
+        }
+
+        .box-inline {
+            display: inline;
+        }
+
+        .box-inline-block {
+            display: inline-block;
+        }
+
+        .box-none {
+            display: none;
+            /* display: none은 실체가 없게 만듦   */
+
+            /* visibility: hidden; */
+            /*display: none과 비슷하게 컨텐츠를 안보이게 만듦
+            실제는 존재하되 투명하게 만들어주는 기능.*/
+
+            /* opacity: 0;
+                위 속성과 같은 작동을 하지만 투명도는 0부터 1(100%)까지 
+                값이 연결되기 때문에 애니메이션 효과 부여 가능 */
+ 
+        }
+    </style>
+</head>
+<body>
+    <div class="box box-block">block</div>
+    <div class="box box-inline">inline</div>
+    <div class="box box-inline-block">inline-block</div>
+    <div class="box box-none">none</div>
+</body>
+</html>
